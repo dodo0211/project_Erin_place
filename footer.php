@@ -1,37 +1,18 @@
-<div class="logo"><i class="fas fa-map-marked"></i> <br /> &copy; 2021~</div>
-<div class="features">
-    <h3>Features</h3>
-    <ul class="features-content">
-        <li>Cool stuff</li>
-        <li>Random feature</li>
-        <li>Team feature</li>
-        <li>Stuff for developers</li>
-        <li>Another one</li>
-        <li>Last time</li>
-    </ul>
-</div>
+<span>
+    <div>
+        <div>법인명(상호): Erin's place</div>
+        <div>사업자정보: 아직 없음</div>
+    </div>
 
+    <div>
+        <div>대표전화 010-****-7173</div>
+        <div>서울시 강동구 천호동</div>
+    </div>
 
-<div class="features">
-    <h3>Resources</h3>
-    <ul class="features-content">
-        <li>Cool stuff</li>
-        <li>Random feature</li>
-        <li>Team feature</li>
-        <li>Stuff for developers</li>
-        <li>Another one</li>
-        <li>Last time</li>
-    </ul>
-</div>
+    <div>문의: 허선영 (heosy0211@gmail.com)</div>
+    <div>개인정보 보호책임자: 허선영 (heosy0211@gmail.com)</div>
+    <br>
+    <div>&copy; 2021~</div>
+    <br>
 
-<div class="features">
-    <h3>About</h3>
-    <ul class="features-content">
-        <li>Cool stuff</li>
-        <li>Random feature</li>
-        <li>Team feature</li>
-        <li>Stuff for developers</li>
-        <li>Another one</li>
-        <li>Last time</li>
-    </ul>
-</div>
+</span>
