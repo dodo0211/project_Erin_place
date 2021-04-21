@@ -28,7 +28,7 @@
             <ul class="register_login">
                 <li><a href="#">Login</a></li>
                 <li>|</li>
-                <li><a href="#">Register</a></li>
+                <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/member/member_form.php">Register</a></li>
             </ul>
         </div>
 
