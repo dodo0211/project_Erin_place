@@ -1,0 +1,109 @@
+* {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+* {
+  font-family: "Source Sans Pro";
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ////////////////////// header ///////////////////// */
+a {
+  /* 하이퍼텍스트 밑줄이랑 글자색 효과 지우기 */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav.navbar {
+  display: flex;
+  /* 원래 디폴트 설정 */
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+div.navbar_logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div.navbar_logo i {
+  color: blanchedalmond;
+}
+
+ul.navbar_menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  font-size: 20px;
+}
+
+ul.navbar_menu li {
+  padding: 8px 15px;
+}
+
+ul.navbar_menu li:hover {
+  background-color: cornsilk;
+  border-radius: 4px;
+}
+
+ul.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+ul.navbar_icons li {
+  padding: 8px 5px;
+  font-size: 45px;
+}
+
+a.navbar_toggle {
+  color: black;
+  font-size: 30px;
+  display: none;
+}
+
+/* 가로화면이 작아지면 기준축과 보조축의 위치가 변함 */
+@media screen and (max-width: 768px) {
+  nav.navbar {
+    flex-direction: column;
+    /* navbar전체가 시작축 쪽으로 변함 */
+    align-items: flex-start;
+  }
+
+  ul.navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  ul.navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul.navbar_icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  a.navbar_toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  ul.navbar_menu.active {
+    display: flex;
+  }
+}
+
+/* ////////////////////// img_slide ///////////////////// */
