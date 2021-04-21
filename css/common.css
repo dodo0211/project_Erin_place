@@ -26,6 +26,7 @@ nav.navbar {
   padding: 10px 15px;
   align-items: center;
   background-color: cornflowerblue;
+  /* background-color: #c5cae9; */
 }
 
 div.navbar_logo {
@@ -107,3 +108,38 @@ a.navbar_toggle {
 }
 
 /* ////////////////////// img_slide ///////////////////// */
+
+/* ////////////////////// footer ///////////////////// */
+footer {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+footer div.logo i {
+  color: cornflowerblue;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+footer div.features h3 {
+  margin-top: 0;
+}
+
+footer ul.features-content {
+  list-style: none;
+}
+
+footer ul.features-content li {
+  padding: 3px;
+  font-weight: 600;
+}
