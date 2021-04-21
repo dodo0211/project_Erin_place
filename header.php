@@ -9,10 +9,8 @@
         <!-- 네비게이션 메뉴 -->
         <!-- div도 블록, ul도 블럭이니까 둘 중 하나만 써도 됨 -->
         <ul class="navbar_menu" class="active">
-            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/index.php">MAIN</a></li>
-            <li><a href="#">LANGUAGE</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">Q&A</a></li>
+            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.php">PORTFOLIO</a></li>
+            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/post/post.php">POST</a></li>
         </ul>
 
         <div>

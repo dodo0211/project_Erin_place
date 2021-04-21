@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erin's place</title>
     <!-- link -->
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common.css?after=1">
     <link rel="stylesheet" href="./css/main.css">
     <!-- script -->
     <script src="./js/img_slide.js" defer></script>

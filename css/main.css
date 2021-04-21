@@ -6,34 +6,42 @@
 section {
   width: 1000px;
   height: 300px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.main_post {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  border: 1px solid rgb(179, 174, 174);
+}
+
 section div {
-  width: 200px;
-  height: 200px;
   margin: 10px;
 }
 
-section div.logo i {
-  color: rgb(255, 115, 0);
-  font-size: 50px;
-  font-weight: 700;
+section > div:first-child {
+  flex-grow: 1;
 }
 
-section ul {
-  list-style: none;
+section > div:nth-child(2) {
+  flex-grow: 1;
 }
 
-section ul > li {
-  padding: 3px;
-  font-weight: 600;
+section > div:nth-child(3) {
+  flex-grow: 1;
 }
 
-section li:hover {
-  background-color: cornflowerblue;
-  border-radius: 4px;
+.main_post > div:first-child {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.main_post > div:nth-child(2) {
+  flex-grow: 6;
 }
