@@ -3,13 +3,13 @@
   padding: 0;
 }
 
+/* /////////////////////////// 공통 /////////////////////////// */
 section {
-  width: 1000px;
-  height: 300px;
+  width: 75%;
+  height: 100%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .main_post {
@@ -17,31 +17,49 @@ section {
   flex-direction: column;
   min-height: 250px;
   border: 1px solid rgb(179, 174, 174);
+  border-radius: 6px;
+  align-items: flex-start;
 }
 
+/* portfolio와 post 전체 박스 */
 section div {
-  margin: 10px;
+  margin: 10px 30px;
 }
 
-section > div:first-child {
-  flex-grow: 1;
+/* 대표 게시글 제목 */
+div h2 {
+  border-bottom: 1px solid black;
 }
 
-section > div:nth-child(2) {
-  flex-grow: 1;
-}
-
-section > div:nth-child(3) {
-  flex-grow: 1;
-}
-
+/* 제목 */
 .main_post > div:first-child {
+  /* .main_post_category */
   font-weight: bold;
   font-size: 30px;
   margin: 0 auto;
   flex-grow: 1;
+  padding-top: 10px;
+  /* border-bottom: 1px solid black; */
 }
 
+/* 대표 게시글 */
 .main_post > div:nth-child(2) {
   flex-grow: 6;
+}
+
+/* ////////////////////////// portfolio ///////////////////////// */
+/* portfolio */
+section > div:first-child {
+  flex-grow: 1;
+}
+
+/* portfolio 안의 이미지를 둘러싸는 div 박스 */
+.portfolio_img_box {
+  display: flex;
+}
+
+/* /////////////////////////////// post /////////////////////////// */
+/* post */
+section > div:nth-child(2) {
+  flex-grow: 1;
 }
