@@ -23,11 +23,10 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
     </header>
 
-    <!-- section (main) -->
-    <section>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/main.php"; ?>
-    </section>
-
+    <br>
+    <br>
+    <br>
+    <br>
     <hr>
 
     <!-- footer -->

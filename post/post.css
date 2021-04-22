@@ -40,6 +40,12 @@ section > div:first-child {
 .post_detail_title {
   margin-left: 30px;
   padding: 0 5px;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+}
+
+.post_detail_title:hover {
+  background-color: cornsilk;
 }
 
 /* 내용 */

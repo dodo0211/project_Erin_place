@@ -1,3 +1,15 @@
+<?php
+session_start();
+if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
+else $userid = "";
+if (isset($_SESSION["username"])) $username = $_SESSION["username"];
+else $username = "";
+if (isset($_SESSION["userlevel"])) $userlevel = $_SESSION["userlevel"];
+else $userlevel = "1";
+if (isset($_SESSION["userpoint"])) $userpoint = $_SESSION["userpoint"];
+else $userpoint = "";
+?>
+
 <div>
     <nav class="navbar">
         <!-- 네비게이션 로고 -->
@@ -24,9 +36,28 @@
             </ul>
 
             <ul class="register_login">
-                <li><a href="#">Login</a></li>
-                <li>|</li>
-                <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/member/member_form.php">Register</a></li>
+
+                <?php
+                if (!$userid) {
+                ?>
+                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/login/login_form.php">Login</a></li>
+                    <li>|</li>
+                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/member/member_form.php">Register</a></li>
+                <?php
+                } else {
+                    $logged = $username . "(" . $userid . ")님[Level:" . $userlevel . ", Point:" . $userpoint . "]";
+                ?>
+                    <li><?= $logged ?> </li>
+                    <li> | </li>
+                    <li><a href="http://<?= $_SERVER['HTTP_HOST']; ?>/project_erin_place/login/logout.php">로그아웃</a> </li>
+                    <li> | </li>
+                    <li><a href="http://<?= $_SERVER['HTTP_HOST']; ?>/project_erin_place/member/member_modify_form.php">정보 수정</a></li>
+                    <li> | </li>
+                    <li><a href="http://<?= $_SERVER['HTTP_HOST']; ?>/project_erin_place/member/member_delete_form.php">회원 탈퇴</a></li>
+                <?php
+                }
+                ?>
+
             </ul>
         </div>
 
