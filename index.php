@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erin's place</title>
     <!-- link -->
-    <link rel="stylesheet" href="./css/common.css?after=2">
-    <link rel="stylesheet" href="./css/main.css?after=4">
+    <link rel="stylesheet" href="./css/common.css?after=3">
+    <link rel="stylesheet" href="./css/main.css?after=5">
     <!-- script -->
     <script src="./js/img_slide.js" defer></script>
     <!-- api -->

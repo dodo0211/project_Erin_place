@@ -76,6 +76,7 @@
 						<form method="post" action="./admin_member_update.php">
 							<!-- number가 primary_key이기 때문에 hidden -->
 							<input type="hidden" name="num" value="<?= $num ?>">
+							<input type="hidden" name="id" value="<?= $id ?>">
 							<span class="col1"><?= $number ?></span>
 							<span class="col2"><?= $id ?></a></span>
 							<span class="col3"><?= $name ?></span>

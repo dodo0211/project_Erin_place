@@ -22,8 +22,6 @@ section > div:first-child {
 
 /* navigation bar */
 .lang_list {
-  /* margin: 40px; */
-  padding: 10px;
   font-weight: bold;
 }
 

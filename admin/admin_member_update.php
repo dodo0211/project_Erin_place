@@ -13,7 +13,7 @@ if (isset($_SESSION["id"]) && $_SESSION["id"] != 'erin') {
     exit;
 }
 
-
+$id = $_POST["id"];
 $num   = $_POST["num"];
 $level = $_POST["level"];
 $point = $_POST["point"];
@@ -21,8 +21,6 @@ $point = $_POST["point"];
 // members 테이블애서 해당되는 num값을 찾아서 level과 point 값을 수정
 $sql = "update members set level=$level, point=$point where num=$num";
 $result = mysqli_query($con, $sql);
-
-
 
 if (!$result) {
     echo "
@@ -33,9 +31,13 @@ if (!$result) {
     ";
 } else {
 
+    if($_SESSION["userid"] == $id) {          
+        $_SESSION["userlevel"] = $level;
+        $_SESSION["userpoint"] = $point;
+    }
     echo "
         <script>
-            alert('수정 실패');
+            alert('수정 성공');
             location.href = './admin.php';
         </script>
         ";

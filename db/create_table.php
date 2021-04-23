@@ -32,8 +32,8 @@ function create_table($con, $table_name)
                                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
                     ";
                 break;
-            case 'board':
-                $query = "CREATE TABLE `board` (
+            case 'portfolio':
+                $query = "CREATE TABLE `portfolio` (
                                   `num` int NOT NULL AUTO_INCREMENT,
                                   `id` char(15) NOT NULL,
                                   `name` char(10) NOT NULL,

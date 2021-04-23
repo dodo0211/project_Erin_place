@@ -23,7 +23,6 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
     </header>
     <section>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/main_img_bar.php"; ?>
         <div id="main_content">
             <div id="login_box">
                 <div id="login_title">

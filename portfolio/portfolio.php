@@ -25,16 +25,23 @@
 
     <!-- section (portfolio) -->
     <section>
-        <h2>Portfolio > the whole</h2>
+        <!-- <h2>Portfolio > the whole</h2> -->
+        <div class="portfolio_list">
+            <div class="lang_list"><a href="#">the whole</a></div>
+            <div class="lang_list"><a href="#">PHP</a></div>
+            <div class="lang_list"><a href="#">Javascript</a></div>
+            <div class="lang_list"><a href="#">Java</a></div>
+            <div class="lang_list"><a href="#">Python</a></div>
+            <div class="lang_list"><a href="#">C</a></div>
+        </div>
+
+
         <div>
-            <ul class="portfolio_list">
-                <li><a href="#">the whole</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">Javascrpt</a></li>
-                <li><a href="#">Java</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">C</a></li>
-            </ul>
+            <div class="portfolio_detail_category">
+                <ul>
+                    <li class="portfolio_detail_title"><a href="#">주식차트 분석 프로그램</a></li>
+                </ul>
+            </div>
 
             <div class="portfolio_content">
                 <h1>주식차트 분석 프로그램</h1><br />
@@ -71,8 +78,8 @@
                     <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next5.png" alt="프로젝트next_결과사진5"></div>
                 </div><br />
             </div>
-
         </div>
+
     </section>
 
     <hr>

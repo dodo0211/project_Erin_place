@@ -20,20 +20,25 @@ section > h2 {
   margin-left: 70px;
 }
 
-section > div {
-  position: relative;
+.portfolio_list {
+  display: flex;
+  justify-content: space-around;
+  background-color: cornflowerblue;
 }
 
-/* .portfolio_list {
-  position: fixed;
-  top: 0;
-  left: 100px;
-} */
+/* navigation bar */
+.lang_list {
+  padding: 10px;
+  font-weight: bold;
+}
 
-section > div {
+.lang_list:hover {
+  background-color: cornsilk;
+  border-radius: 4px;
+}
+
+section > div:nth-child(2) {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 section ul {
@@ -52,6 +57,17 @@ section li {
 section li:hover {
   background-color: cornsilk;
   border-radius: 4px;
+}
+
+.portfolio_detail_title {
+  margin-left: 30px;
+  padding: 0 5px;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+}
+
+.portfolio_detail_title:hover {
+  background-color: cornsilk;
 }
 
 .portfolio_content {
