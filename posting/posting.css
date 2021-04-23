@@ -33,23 +33,23 @@ section > div:first-child {
 }
 
 /* 각 언어의 구체적 주제 */
-.post_detail_category {
+.posting_detail_category {
   flex-grow: 2;
 }
 
-.post_detail_title {
+.posting_detail_title {
   margin-left: 30px;
   padding: 0 5px;
   background-color: cornflowerblue;
   border-radius: 4px;
 }
 
-.post_detail_title:hover {
+.posting_detail_title:hover {
   background-color: cornsilk;
 }
 
 /* 내용 */
-.post_content {
+.posting_content {
   border-bottom: 1px solid black;
   flex-grow: 10;
   padding: 5px 10px;

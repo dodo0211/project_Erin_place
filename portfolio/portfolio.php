@@ -31,7 +31,6 @@
                 <li><a href="#">the whole</a></li>
                 <li><a href="#">PHP</a></li>
                 <li><a href="#">Javascrpt</a></li>
-                <li><a href="#">HTML</a></li>
                 <li><a href="#">Java</a></li>
                 <li><a href="#">Python</a></li>
                 <li><a href="#">C</a></li>

@@ -8,9 +8,9 @@
     <title>Erin's place</title>
     <!-- link -->
     <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/post/post.css?after=1">
+    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/posting/posting.css?after=1">
     <!-- script -->
-    <script src="./post.js" defer></script>
+    <script src="./posting.js" defer></script>
     <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/js/img_slide.js"></script>
     <!-- api -->
     <script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
@@ -30,20 +30,19 @@
             <div class="lang_list"><a href="#">the whole</a></div>
             <div class="lang_list"><a href="#">PHP</a></div>
             <div class="lang_list"><a href="#">Javascript</a></div>
-            <div class="lang_list"><a href="#">HTML</a></div>
             <div class="lang_list"><a href="#">Java</a></div>
             <div class="lang_list"><a href="#">Python</a></div>
             <div class="lang_list"><a href="#">C</a></div>
         </div>
 
         <div>
-            <div class="post_detail_category">
+            <div class="posting_detail_category">
                 <ul>
-                    <li class="post_detail_title">호이스팅(hoisting)이란?</li>
+                    <li class="posting_detail_title">호이스팅(hoisting)이란?</li>
                 </ul>
             </div>
 
-            <div class="post_content">
+            <div class="posting_content">
                 <br>
                 <h3>호이스팅(hositing)이란?</h3><br>
                 함수 내에서 선언된 변수는 어디있던 간에 제일 처음으로 모두 끌어올려서 해당 함수 유효 범위의 최상단에 선언하는 것. <br><br>
