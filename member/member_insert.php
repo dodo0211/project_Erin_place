@@ -4,11 +4,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php"
 include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/create_table.php";
 create_table($con, 'members');
 
-$id = $_POST["id"];
-$pass = $_POST["pass"];
-$name = $_POST["name"];
-$email1 = $_POST["email1"];
-$email2 = $_POST["email2"];
+$id = input_set($_POST["id"]);
+$pass = input_set($_POST["pass"]);
+$name = input_set($_POST["name"]);
+$email1 = input_set($_POST["email1"]);
+$email2 = input_set($_POST["email2"]);
 
 $email = $email1 . "@" . $email2;
 $regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장

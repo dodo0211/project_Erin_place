@@ -23,6 +23,7 @@ else $userpoint = "";
         <ul class="navbar_menu" class="active">
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.php">PORTFOLIO</a></li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/posting/posting.php">POSTING</a></li>
+            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/note/note.php">NOTE</a></li>
         </ul>
 
         <div>
@@ -62,7 +63,13 @@ else $userpoint = "";
         </div>
 
         <!-- 햄버거바 -->
-        <a href="http://<?= $_SERVER['HTTP_HOST']; ?>/project_erin_place/admin/admin.php" class="navbar_toggle" id="navbar_button"> <i class="fas fa-bars"></i> </a>
+        <?php
+        if ($userid == 'erin') {
+        ?>
+            <a href="http://<?= $_SERVER['HTTP_HOST']; ?>/project_erin_place/admin/admin.php" class="navbar_toggle" id="navbar_button"> <i class="fas fa-bars"></i> </a>
+        <?php
+        }
+        ?>
 
     </nav>
 </div>
