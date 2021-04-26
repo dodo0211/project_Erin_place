@@ -17,6 +17,7 @@ function create_table($con, $table_name)
             break;
         }
     }
+
     //해당 테이블명이 없으면 해당 테이블명을 찾아서 데이블 생성 쿼리문을 작성한다.
     if ($flag === false) {
         switch ($table_name) {
@@ -32,12 +33,29 @@ function create_table($con, $table_name)
                                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
                     ";
                 break;
+            case 'board':
+                $query = "CREATE TABLE `board` (
+                                  `num` int NOT NULL AUTO_INCREMENT,
+                                  `id` char(15) NOT NULL,
+                                  `name` char(10) NOT NULL,
+                                  `subject` char(200) NOT NULL,
+                                  `content` text NOT NULL,
+                                  `regist_day` char(20) NOT NULL,
+                                  `hit` int NOT NULL,
+                                  `file_name` char(40) DEFAULT NULL,
+                                  `file_type` char(40) DEFAULT NULL,
+                                  `file_copied` char(40) DEFAULT NULL,
+                                  PRIMARY KEY (`num`)
+                                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+                    ";
+                break;
             case 'portfolio':
                 $query = "CREATE TABLE `portfolio` (
                                   `num` int NOT NULL AUTO_INCREMENT,
                                   `id` char(15) NOT NULL,
                                   `name` char(10) NOT NULL,
                                   `subject` char(200) NOT NULL,
+                                  `sub_subject` char(200) NOT NULL,
                                   `content` text NOT NULL,
                                   `regist_day` char(20) NOT NULL,
                                   `hit` int NOT NULL,
@@ -136,13 +154,14 @@ function create_table($con, $table_name)
                     ";
                 break;
             default:
-                echo "<script>alert('해당테이블명이 없습니다 . ')</script>";
+                echo "<script>alert('해당테이블명이 없습니다 . ');</script>";
                 break;
         }
+
         if (mysqli_query($con, $query)) {
-            echo "<script>alert('{$table_name} 테이블이 생성되엇습니다. ')</script>";
+            echo "<script>alert('{$table_name} 테이블이 생성되엇습니다. ');</script>";
         } else {
-            echo "<script>alert('{$table_name} 테이블 생성 실패 : '." . mysqli_error($con) . ")</script>";
+            echo "<script>alert('{$table_name} 테이블 생성 실패 : ');</script>";
         }
     }
 }

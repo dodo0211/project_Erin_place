@@ -8,26 +8,32 @@ if (isset($_SESSION["userlevel"])) $userlevel = $_SESSION["userlevel"];
 else $userlevel = "9";
 if (isset($_SESSION["userpoint"])) $userpoint = $_SESSION["userpoint"];
 else $userpoint = "";
+// 모든 페이지에서 세션값을 확인하고 가져옴, 세션값이 없으면 문자열 '' 저장
+
+include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/create_table.php";
+create_table($con, 'board');
+create_table($con, 'portfolio');
+create_table($con, 'message');
 ?>
 
 <div>
     <nav class="navbar">
-        <!-- 네비게이션 로고 -->
+        <!-- nevigation logo -->
         <div class="navbar_logo">
             <i class="fas fa-keyboard"></i>
             <a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/index.php">Erin's Place</a>
         </div>
 
-        <!-- 네비게이션 메뉴 -->
-        <!-- div도 블록, ul도 블럭이니까 둘 중 하나만 써도 됨 -->
+        <!-- nevigation menu -->
         <ul class="navbar_menu" class="active">
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.php">PORTFOLIO</a></li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/posting/posting.php">POSTING</a></li>
-            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/note/note.php">NOTE</a></li>
+            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/board/board_list.php">BOARD</a></li>
+            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/message/message_box.php?mode=rv">MESSAGE</a></li>
         </ul>
 
         <div>
-            <!-- 네비게이션 아이콘 -->
+            <!-- nevigation SNS icon -->
             <ul class="navbar_icons">
                 <li><a href="https://github.com/dodo0211" target="_blank"><i class="fab fa-git-square"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCGjxLr0w5KoEjVyah2cmArw" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
