@@ -12,6 +12,8 @@ if (isset($_POST["mode"]) && $_POST["mode"] === "delete") {
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);
     $writer = $row["id"];
+
+    // 글 작성자나 관리자(userlevel=1)가 아니면 삭제 권한 없음
     if (!isset($userid) || ($userid !== $writer && $userlevel !== '1')) {
         alert_back('수정권한이 없습니다.');
         exit;
@@ -109,7 +111,7 @@ if (isset($_POST["mode"]) && $_POST["mode"] === "delete") {
     $sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
     $sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, ";
     $sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
-    mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
+    mysqli_query($con, $sql) or die('error: ' . mysqli_error($con));  // $sql 에 저장된 명령 실행
 
     // 포인트 부여하기
     $point_up = 100;
@@ -120,7 +122,7 @@ if (isset($_POST["mode"]) && $_POST["mode"] === "delete") {
     $new_point = $row["point"] + $point_up;
 
     $sql = "update members set point=$new_point where id='$userid'";
-    mysqli_query($con, $sql);
+    mysqli_query($con, $sql) or die('error: ' . mysqli_error($con));
 
     mysqli_close($con);                // DB 연결 끊기
 

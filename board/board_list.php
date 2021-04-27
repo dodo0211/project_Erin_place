@@ -65,6 +65,7 @@
                 $number = $total_record - $start;
 
                 // 보여줘야할 개수의 게시판을 진행
+                // 제일 마지막 페이지에 scale보다 게시물의 수가 적을 수 있기 때문
                 for ($i = $start; $i < $start + $scale && $i < $total_record; $i++) {
                     mysqli_data_seek($result, $i);
                     // 가져올 레코드로 위치(포인터) 이동
@@ -91,7 +92,7 @@
                     </li>
                 <?php
                     $number--;
-                }
+                }   //end of for
                 mysqli_close($con);
                 ?>
             </ul>

@@ -61,7 +61,8 @@ section li:hover {
 
 .portfolio_detail_title {
   margin-left: 30px;
-  padding: 0 5px;
+  margin-bottom: 8px;
+  padding: 0 10px;
   background-color: cornflowerblue;
   border-radius: 4px;
 }
@@ -82,7 +83,13 @@ section li:hover {
   font-size: 60px;
 }
 
-.portfolio_img {
+.portfolio_img_android {
   display: flex;
   justify-content: space-around;
+}
+
+.portfolio_img {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
 }

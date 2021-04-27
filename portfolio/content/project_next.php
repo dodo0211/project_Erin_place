@@ -8,7 +8,7 @@
     <title>Erin's place</title>
     <!-- link -->
     <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.css?after=4">
+    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.css?after=2">
     <!-- script -->
     <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.js" defer></script>
     <!-- api -->
@@ -47,9 +47,7 @@
                 </ul>
             </div>
 
-            <!-- 최초의 화면 default -->
             <div class="portfolio_content">
-                <br><br>
                 <h1>주식차트 분석 프로그램</h1><br />
                 <h3>Adroid_studio, Python</h3> <br>
                 <div class="portfolio_icon">
@@ -80,14 +78,13 @@
                 </div>
 
                 <div class="portfolio_img_android">
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next1.png" alt="프로젝트next_결과사진1"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next2.png" alt="프로젝트next_결과사진2"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next3.png" alt="프로젝트next_결과사진3"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next4.png" alt="프로젝트next_결과사진4"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next5.png" alt="프로젝트next_결과사진5"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next1.png" alt="프로젝트next_결과사진1"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next2.png" alt="프로젝트next_결과사진2"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next3.png" alt="프로젝트next_결과사진3"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next4.png" alt="프로젝트next_결과사진4"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next5.png" alt="프로젝트next_결과사진5"></div>
                 </div><br />
             </div>
-
         </div>
 
     </section>

@@ -8,7 +8,7 @@
     <title>Erin's place</title>
     <!-- link -->
     <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.css?after=4">
+    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.css?after=2">
     <!-- script -->
     <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.js" defer></script>
     <!-- api -->
@@ -47,47 +47,37 @@
                 </ul>
             </div>
 
-            <!-- 최초의 화면 default -->
             <div class="portfolio_content">
-                <br><br>
-                <h1>주식차트 분석 프로그램</h1><br />
-                <h3>Adroid_studio, Python</h3> <br>
+                <h1>재활용품으로 기부하는 자판기</h1><br />
+                <h3>C_lang</h3> <br>
                 <div class="portfolio_icon">
-                    <span><a href="https://github.com/dodo0211/ProjectNext" target="_blank"><i class="fab fa-git-square"></i></a></span>
-                    <span><a href="https://www.youtube.com/watch?v=jHTt17o2BgM" target="_blank"><i class="fab fa-youtube-square"></i></a></span>
-                    <span><a href="https://trello.com/b/S9j6XRw2/projectnext" target="_blank"><span>Trello</span></a></span>
+                    <span><a href="https://github.com/dodo0211/vandingMachine" target="_blank"><i class="fab fa-git-square"></i></a></span>
                 </div><br />
 
                 <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jHTt17o2BgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br>
+                    <br>
                     <h3>제작 상세</h3>
-                    - 개발 기간 : 2021.03.25 ~ <br />
+                    - 개발 기간 : 2021 ~ <br />
                     - 개발 <br />
-                    팀장 : 송훈일 <br />
-                    팀원 : 허선영, 김택민 <br /><br />
+                    : 허선영 <br /><br />
 
                     <h3>개발 환경</h3>
-                    - java 15.0.2 <br />
-                    - scala 2.13.4 <br />
-                    - python 3.9.2 <br />
-                    - android studio 4.1.3, Intellij IDEA 11.0.2, PyCharm 11.0.10 <br />
-                    - MySQL 8.0.23 <br /><br />
+                    - IntelliJ IDEA CE 11.0.9.1 <br>
+                    - Version : 8.0.23 <br>
+                    - Docker version 20.10.2 <br><br>
 
                     <h3>실행 환경</h3>
-                    - Windows 10 <br />
-                    - MacOS <br /><br />
+                    - window 10 <br /><br>
+
                 </div>
 
-                <div class="portfolio_img_android">
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next1.png" alt="프로젝트next_결과사진1"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next2.png" alt="프로젝트next_결과사진2"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next3.png" alt="프로젝트next_결과사진3"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next4.png" alt="프로젝트next_결과사진4"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next5.png" alt="프로젝트next_결과사진5"></div>
+                <div class="portfolio_img">
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_vending_machine/vending_machine1.png" alt="프로젝트vending_machine_결과사진1"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_vending_machine/vending_machine2.png" alt="프로젝트vending_machine_결과사진2"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_vending_machine/vending_machine3.png" alt="프로젝트vending_machine_결과사진3"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_vending_machine/vending_machine4.png" alt="프로젝트vending_machine_결과사진4"></div>
                 </div><br />
             </div>
-
         </div>
 
     </section>

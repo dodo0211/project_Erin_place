@@ -24,10 +24,11 @@ function alert_back($message)
         ");
 }
 
+// 공격성을 가진 클라이언트를 방어
 function input_set($data)
 {
     $data = trim($data);
     $data = stripslashes($data);
-    $data = htmlspecialchars($data);
+    $data = htmlspecialchars($data);    // entity로 변환
     return $data;
 }
