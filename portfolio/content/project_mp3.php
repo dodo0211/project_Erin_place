@@ -25,16 +25,16 @@
 
     <!-- section (portfolio) -->
     <section>
+        <!-- 언어 분류, 포트폴리오가 더 많아지면 다시 삽입예정 -->
         <!-- <h2>Portfolio > the whole</h2> -->
         <div class="portfolio_list">
-            <div class="lang_list"><a href="#">the whole</a></div>
+            <!-- <div class="lang_list"><a href="#">the whole</a></div>
             <div class="lang_list"><a href="#">PHP</a></div>
             <div class="lang_list"><a href="#">Javascript</a></div>
             <div class="lang_list"><a href="#">Java</a></div>
             <div class="lang_list"><a href="#">Python</a></div>
-            <div class="lang_list"><a href="#">C</a></div>
+            <div class="lang_list"><a href="#">C</a></div> -->
         </div>
-
 
         <div>
             <div class="portfolio_detail_category">
@@ -53,6 +53,7 @@
                 <div class="portfolio_icon">
                     <span><a href="https://github.com/dodo0211/MP3" target="_blank"><i class="fab fa-git-square"></i></a></span>
                     <span><a href="https://www.youtube.com/watch?v=hZCqEZnwcZY" target="_blank"><i class="fab fa-youtube-square"></i></a></span>
+                    <span><a href="https://cafe.naver.com/incodingram/154" target="_blank"><span>Naver</span></a></span>
                 </div><br />
 
                 <div>
