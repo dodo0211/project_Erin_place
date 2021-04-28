@@ -81,11 +81,11 @@
                 </div>
 
                 <div class="portfolio_img_android">
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next1.png" alt="프로젝트next_결과사진1"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next2.png" alt="프로젝트next_결과사진2"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next3.png" alt="프로젝트next_결과사진3"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next4.png" alt="프로젝트next_결과사진4"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next5.png" alt="프로젝트next_결과사진5"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next1.png" alt="프로젝트next_결과사진1"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next2.png" alt="프로젝트next_결과사진2"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next3.png" alt="프로젝트next_결과사진3"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next4.png" alt="프로젝트next_결과사진4"></div>
+                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_next/next5.png" alt="프로젝트next_결과사진5"></div>
                 </div><br />
             </div>
 

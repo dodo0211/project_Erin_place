@@ -1,3 +1,6 @@
+<?php
+echo $_SERVER['DOCUMENT_ROOT'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
