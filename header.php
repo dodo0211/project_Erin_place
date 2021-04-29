@@ -31,6 +31,7 @@ create_table($con, 'message');
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/board/board_list.php">BOARD</a></li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/image_board/board_list.php">IMAGE</a></li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/message/message_box.php?mode=rv">MESSAGE</a></li>
+            <li><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/list.php?mode=rv">QnA</a></li>
         </ul>
 
         <div>
