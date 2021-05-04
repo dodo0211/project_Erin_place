@@ -1,6 +1,6 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/create_table.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/create_table.php";
 
 create_table($con, 'free'); //자유게시판테이블생성
 create_table($con, 'free_ripple'); //자유게시판덧글테이블생성
@@ -38,25 +38,16 @@ $number = $total_record - $start;
 <html lang="ko" dir="ltr">
 
 <head>
-	<meta charset="utf-8">
-	<title>Erin's place</title>
-	<!-- link -->
-	<link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-	<link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/css/greet.css">
-	<!-- script -->
-	<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/js/img_slide.js" defer></script>
-	<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/js/member_form.js" defer></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="./js/member_form.js?ver=1"></script>
-	<!-- api -->
-	<script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+	<link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/css/greet.css">
+	<!-- script -->\
+	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js" defer></script>\
+	<script type="text/javascript" src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js?ver=1"></script>\
 </head>
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
 	</header>
 	<section>
 		<div id="wrap">
@@ -172,7 +163,7 @@ $number = $total_record - $start;
 		<!--end of wrap  -->
 	</section>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
 	</footer>
 </body>
 

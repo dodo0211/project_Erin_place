@@ -2,26 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erin's place</title>
-    <!-- link -->
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/posting/posting.css?after=1">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/posting/posting.css?after=2">
     <!-- script -->
-    <script src="./posting.js" defer></script>
-    <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/js/img_slide.js"></script>
-    <!-- api -->
-    <script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/posting/posting.js" defer></script>
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
     </header>
 
     <!-- section (post) -->
@@ -54,11 +44,9 @@
 
     </section>
 
-    <hr>
-
     <!-- footer -->
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
     </footer>
 
 </body>

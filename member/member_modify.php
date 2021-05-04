@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 $id = $_POST["id"];
 
 $pass = $_POST["pass"];
@@ -30,6 +30,6 @@ mysqli_close($con);
 echo "
 	      <script>
 	      alert('수정 완료');
-	          location.href = 'http://{$_SERVER['HTTP_HOST']}/project_erin_place/index.php';
+	          location.href = 'https://{$_SERVER['HTTP_HOST']}/index.php';
 	      </script>
 	  ";

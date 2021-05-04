@@ -2,7 +2,7 @@
 session_start();
 if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
 if (isset($_SESSION["username"])) $username = $_SESSION["username"];
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 
 if (isset($_POST["mode"]) && $_POST["mode"] === "delete") {
     $num = $_POST["num"];
@@ -33,7 +33,7 @@ if (isset($_POST["mode"]) && $_POST["mode"] === "delete") {
 	   ";
 } else if (isset($_POST["mode"]) && $_POST["mode"] === "insert") {
 
-    include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 
 
     //세션값확인

@@ -2,25 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erin's place</title>
-    <!-- link -->
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.css?after=2">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/portfolio.css?after=2">
     <!-- script -->
-    <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.js" defer></script>
-    <!-- api -->
-    <script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/portfolio.js" defer></script>
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
     </header>
 
     <!-- section (portfolio) -->
@@ -39,11 +30,11 @@
         <div>
             <div class="portfolio_detail_category">
                 <ul>
-                    <li class="portfolio_detail_title"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/content/project_next.php">주식차트 분석 프로그램</a></li>
-                    <li class="portfolio_detail_title"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/content/project_shimpyo.php">매일 일기 프로그램</a></li>
-                    <li class="portfolio_detail_title"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/content/project_mp3.php">MP3 Player</a></li>
-                    <li class="portfolio_detail_title"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/content/project_patients.php">병원 환자 명단관리 프로그램</a></li>
-                    <li class="portfolio_detail_title"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/content/project_vending_machine.php">재활용품으로 기부하는 자판기</a></li>
+                    <li class="portfolio_detail_title"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/content/project_next.php">주식차트 분석 프로그램</a></li>
+                    <li class="portfolio_detail_title"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/content/project_shimpyo.php">매일 일기 프로그램</a></li>
+                    <li class="portfolio_detail_title"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/content/project_mp3.php">MP3 Player</a></li>
+                    <li class="portfolio_detail_title"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/content/project_patients.php">병원 환자 명단관리 프로그램</a></li>
+                    <li class="portfolio_detail_title"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/content/project_vending_machine.php">재활용품으로 기부하는 자판기</a></li>
                 </ul>
             </div>
 
@@ -75,21 +66,19 @@
                 </div>
 
                 <div class="portfolio_img">
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_patients/patients1.png" alt="프로젝트patients_결과사진1"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_patients/patients2.png" alt="프로젝트patients_결과사진2"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_patients/patients3.png" alt="프로젝트patients_결과사진3"></div>
-                    <div><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/project_patients/patients4.png" alt="프로젝트patients_결과사진4"></div>
+                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_patients/patients1.png" alt="프로젝트patients_결과사진1"></div>
+                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_patients/patients2.png" alt="프로젝트patients_결과사진2"></div>
+                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_patients/patients3.png" alt="프로젝트patients_결과사진3"></div>
+                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_patients/patients4.png" alt="프로젝트patients_결과사진4"></div>
                 </div><br />
             </div>
         </div>
 
     </section>
 
-    <hr>
-
     <!-- footer -->
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
     </footer>
 
 </body>

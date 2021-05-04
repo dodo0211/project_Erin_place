@@ -7,6 +7,6 @@ unset($_SESSION["userpoint"]);
 
 echo ("
        <script>
-          location.href = 'http://{$_SERVER['HTTP_HOST']}/project_erin_place/index.php';
+          location.href = 'https://{$_SERVER['HTTP_HOST']}/index.php';
          </script>
        ");

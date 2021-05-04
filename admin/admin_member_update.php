@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 
 // 여기서 session값을 CURD
 session_start();

@@ -2,24 +2,13 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>Erin's place</title>
-	<!-- link -->
-	<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/css/common.css">
-	<link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/image_board/css/board.css">
-	<!-- script -->
-	<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/js/img_slide.js" defer></script>
-	<script src="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/image_board/js/board.js" defer></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<!-- api -->
-	<script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+	<script src="https://<?= $_SERVER['HTTP_HOST'] ?>/image_board/js/board.js" defer></script>
 </head>
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
 	</header>
 	<?php
 	if (!$userid) {
@@ -33,7 +22,7 @@
 	?>
 	<section>
 		<?php
-		include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+		include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 		$mode = isset($_POST["mode"]) ? $_POST["mode"] : "insert";
 		$subject = "";
 		$content = "";
@@ -110,7 +99,7 @@
 		</div> <!-- board_box -->
 	</section>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
 	</footer>
 </body>
 

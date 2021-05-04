@@ -1,7 +1,7 @@
 <?php
 // 데이터베이스 연동 및 멤버테이블 생성 (테이블 존재 시, 생략)
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/create_table.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/create_table.php";
 create_table($con, 'members');
 
 $id = input_set($_POST["id"]);
@@ -25,7 +25,7 @@ if ($insert_result === false) {
     echo "
             <script>
                 alert('회원가입을 환영합니다!');
-                location.href = 'http://{$_SERVER['HTTP_HOST']}/project_erin_place/index.php';
+                location.href = 'https://{$_SERVER['HTTP_HOST']}/index.php';
             </script>
         ";
 }

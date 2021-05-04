@@ -1,11 +1,11 @@
 <!-- div 전체에 a태그를 portfolio main으로 -->
-<div class="main_post"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/portfolio.php">
+<div class="main_post"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/portfolio.php">
         <div class="main_post_category">Portfolio</div>
         <div>
             <h2>주식차트분석</h2>
             <div class="portfolio_img_box">
-                <div class="portfolio_main_img"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next1.png" alt="프로젝트next_결과사진1"></div>
-                <div class="portfolio_main_img"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/portfolio/img/next/next4.png" alt="프로젝트next_결과사진4"></div>
+                <div class="portfolio_main_img"><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/next/next1.png" alt="프로젝트next_결과사진1"></div>
+                <div class="portfolio_main_img"><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/next/next4.png" alt="프로젝트next_결과사진4"></div>
             </div>
             <div>
                 <br> android, python을 이용한 주식차트 분석 프로그램
@@ -15,13 +15,13 @@
 </div>
 
 <!-- div 전체에 a태그를 portfolio main으로 -->
-<div class="main_post"><a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/post/post.php">
+<div class="main_post"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/post/post.php">
         <div class="main_post_category">Post</div>
         <div>
             <h2>호이스팅(hoisting)이란?</h2>
             <div class="post_img_box">
-                <!-- <div class="post_main_img"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/post/img/hoisting/hoisting1.png" alt="hoisting1"></div>
-                <div class="post_main_img"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/post/img/hoisting/hoisting2.png" alt="hoisting2"></div> -->
+                <!-- <div class="post_main_img"><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/post/img/hoisting/hoisting1.png" alt="hoisting1"></div>
+                <div class="post_main_img"><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/post/img/hoisting/hoisting2.png" alt="hoisting2"></div> -->
             </div>
             <div>
                 <br>

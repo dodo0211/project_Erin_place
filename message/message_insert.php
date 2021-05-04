@@ -1,6 +1,6 @@
 <meta charset='utf-8'>
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 if ($_SERVER["REQUEST_METHOD"] != "POST") alert_back("method 방식이 올바르지 않습니다.");
 if (!isset($_POST["send_id"])) alert_back("send_id 값이 존재하지 않습니다.");
 if (!isset($_POST["rv_id"])) alert_back("rv_id 값이 존재하지 않습니다.");

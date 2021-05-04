@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once $_SERVER['DOCUMENT_ROOT']."/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/db/db_connect.php";
 if(!isset($_SESSION['userid'])){
   echo "<script>alert('권한없음!');history.go(-1);</script>";
   exit;

@@ -1,7 +1,7 @@
 <?php
 
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/qna/lib/free_func.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/qna/lib/free_func.php";
 $num = $id = $subject = $content = $day = $hit = $image_width = $q_num = "";
 $file_type_0 = "";
 if (empty($_GET['page'])) {
@@ -63,25 +63,16 @@ if (isset($_GET["num"]) && !empty($_GET["num"])) {
 <html lang="ko" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Erin's place</title>
-    <!-- link -->
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=4">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/css/greet.css">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/css/greet.css">
     <!-- script -->
-    <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/js/img_slide.js" defer></script>
-    <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/js/member_form.js" defer></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="./js/member_form.js?ver=1"></script>
-    <!-- api -->
-    <script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js" defer></script>
+    <script type="text/javascript" src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js?ver=1"></script>
 </head>
 
 <body>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
     </header>
     <section>
         <?php
@@ -190,7 +181,7 @@ if (isset($_GET["num"]) && !empty($_GET["num"])) {
                                 <input type="hidden" name="page" value="<?= $page ?>">
                                 <div id="ripple_insert">
                                     <div id="ripple_textarea"><textarea name="ripple_content" rows="3" cols="140"></textarea></div>
-                                    <div id="ripple_button"><input type="image" src="./img/memo_ripple_button.png">
+                                    <div id="ripple_button"><input type="image" src="https://<?= $_SERVER["HTTP_HOST"] ?>/qna/img/memo_ripple_button.png">
                                     </div>
                                 </div>
                                 <!--end of ripple_insert -->
@@ -224,7 +215,7 @@ if (isset($_GET["num"]) && !empty($_GET["num"])) {
         <!--end of wrap  -->
     </section>
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
     </footer>
 </body>
 

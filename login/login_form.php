@@ -2,25 +2,16 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Erin's place</title>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
 
-    <!-- link -->
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=2">
-    <link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/login/css/login.css?after=4">
+    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/login/css/login.css?after=4">
     <!-- script -->
-    <script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/js/img_slide.js" defer></script>
-    <script src="./js/login.js" defer></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- api -->
-    <script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://<?= $_SERVER["HTTP_HOST"] ?>/login/js/login.js" defer></script>
 </head>
 
 <body>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
     </header>
     <section>
         <div id="main_content">
@@ -43,7 +34,7 @@
         </div> <!-- main_content -->
     </section>
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
     </footer>
 </body>
 

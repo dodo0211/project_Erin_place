@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 
 session_start();
 if (isset($_SESSION["id"]) && $_SESSION["id"] != 'erin') {
@@ -34,7 +34,7 @@ if (!isset($_POST["item"])) {
         $copied_name = $row["file_copied"];
 
         if ($copied_name) {
-            $file_path = $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/board/data/" . $copied_name;
+            $file_path = $_SERVER['DOCUMENT_ROOT'] . "/board/data/" . $copied_name;
             unlink($file_path);
         }
 

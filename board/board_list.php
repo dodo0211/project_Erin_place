@@ -2,24 +2,14 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Erin's place</title>
-    <!-- link -->
-    <link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/css/common.css">
-    <link rel="stylesheet" type="text/css" href="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/board/css/board.css">
-    <!-- script -->
-    <script src="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/js/img_slide.js" defer></script>
-    <script src="http://<?= $_SERVER['HTTP_HOST'] ?>/project_erin_place/board/js/board.js" defer></script>
-    <!-- api -->
-    <script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+    <link rel="stylesheet" href="https://<?= $_SERVER["HTTP_HOST"] ?>/board/css/board.css?after=3">
+    <script src="https://<?= $_SERVER['HTTP_HOST'] ?>/board/js/board.js" defer></script>
 </head>
 
 <body>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
     </header>
     <section>
         <div id="board_box">
@@ -36,7 +26,7 @@
                     <span class="col6">조회</span>
                 </li>
                 <?php
-                include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+                include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 
                 // $_GET["page"]가 없으면 $page를 1로 세팅
                 if (isset($_GET["page"]))
@@ -145,7 +135,7 @@
         </div> <!-- board_box -->
     </section>
     <footer>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
     </footer>
 </body>
 

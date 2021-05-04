@@ -1,7 +1,7 @@
 ﻿<meta charset='utf-8'>
 
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . '/project_erin_place/db/db_connect.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/db/db_connect.php';
 
 $num = $_GET["num"];
 $mode = $_GET["mode"];

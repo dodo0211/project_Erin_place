@@ -2,29 +2,20 @@
 <html lang="ko" dir="ltr">
 
 <head>
-	<meta charset="utf-8">
-	<title>Erin's place</title>
-	<!-- link -->
-	<link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/css/common.css?after=5">
-	<link rel="stylesheet" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/css/greet.css?after=6">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+	<link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/css/greet.css?after=6">
 	<!-- script -->
-	<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/js/img_slide.js" defer></script>
-	<script src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/project_erin_place/qna/js/member_form.js" defer></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="./js/member_form.js?ver=1"></script>
-	<!-- api -->
-	<script src="https://kit.fontawesome.com/98f04cd3f2.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js" defer></script>
+	<script type="text/javascript" src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js?ver=1"></script>
 </head>
 
 <body>
 	<header>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/header.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/header.php"; ?>
 	</header>
 	<section>
 		<?php
-		include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+		include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 		if (!isset($_SESSION['userid'])) {
 			echo "<script>alert('권한없음11!');history.go(-1);</script>";
 			exit;
@@ -70,7 +61,7 @@
 					<h3>답변형 게시판 > 가입인사</h3>
 				</div>
 				<div class="clear"></div>
-				<div id="write_form_title"><img src="./img/write_form_title.gif"></div>
+				<div id="write_form_title"><img src="https://<?= $_SERVER["HTTP_HOST"] ?>/qna/img/write_form_title.gif"></div>
 				<div class="clear"></div>
 				<form name="board_form" action="dml_free.php" method="post" enctype="multipart/form-data">
 
@@ -135,8 +126,8 @@
 					<!--end of write_form  -->
 
 					<div id="write_button">
-						<input type="image" onclick='document.getElementById("del_file").disabled=false' src="./img/ok.png">&nbsp;
-						<a href="./list.php"><img src="./img/list.png"></a>
+						<input type="image" onclick='document.getElementById("del_file").disabled=false' src="https://<?= $_SERVER["HTTP_HOST"] ?>/qna/img/ok.png">&nbsp;
+						<a href="https://<?= $_SERVER["HTTP_HOST"] ?>/qna/list.php"><img src="https://<?= $_SERVER["HTTP_HOST"] ?>/qna/img/list.png"></a>
 					</div>
 					<!--end of write_button-->
 				</form>
@@ -147,7 +138,7 @@
 		<!--end of wrap  -->
 	</section>
 	<footer>
-		<?php include $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/footer.php"; ?>
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/footer.php"; ?>
 	</footer>
 </body>
 

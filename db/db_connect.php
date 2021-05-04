@@ -2,7 +2,7 @@
 date_default_timezone_set("Asia/Seoul");
 $server_name = "localhost";
 $user_name = "root";
-$pass = "12345678";
+$pass = "123456";
 $db_name = "sample";
 
 $con = mysqli_connect($server_name, $user_name, $pass);

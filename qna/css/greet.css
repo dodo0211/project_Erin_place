@@ -1,12 +1,12 @@
 #wrap {
   position: relative;
-  width: 800px;
+  width: 1030px;
   overflow-y: auto;
   margin: 0 auto;
 }
 
 #content #col2 {
-  width: 807px;
+  width: 1000px;
   min-height: 558px;
   float: left;
   margin-left: 15px;
@@ -33,7 +33,7 @@
 
 #list_search #list_search2 {
   float: left;
-  margin-left: 280px;
+  margin-left: 480px;
   margin-top: 4px;
 }
 
@@ -145,14 +145,13 @@
 
 #page_num {
   float: left;
-  width: 80%;
+  width: 90%;
   margin-top: 10px;
   text-align: center;
 }
 
 #button {
   float: left;
-  width: 18%;
   text-align: right;
 }
 

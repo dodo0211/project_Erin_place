@@ -36,6 +36,7 @@ section > div:nth-child(2) {
 /* 각 포폴의 제목 */
 .portfolio_detail_category {
   flex-grow: 2;
+  flex-basis: 0;
   padding: 5px;
   font-size: 17px;
   margin-left: 10px;
@@ -56,6 +57,7 @@ section > div:nth-child(2) {
 
 .portfolio_content {
   flex-grow: 8;
+  flex-basis: 0;
   padding: 5px;
   margin: 20px 10px;
   border-top: 1px solid black;

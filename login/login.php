@@ -1,5 +1,5 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . "/project_erin_place/db/db_connect.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/db/db_connect.php";
 
 $login_flag = false;
 if (!isset($_POST["id"]) || empty($_POST["id"])) {
@@ -51,7 +51,7 @@ if (!$num_match) {
 
     echo ("
             <script>
-            location.href = 'http://{$_SERVER["HTTP_HOST"]}/project_erin_place/index.php';
+            location.href = 'https://{$_SERVER["HTTP_HOST"]}/index.php';
             </script>
         ");
 }
