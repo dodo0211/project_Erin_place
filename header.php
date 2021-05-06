@@ -40,7 +40,7 @@ create_table($con, 'message');
                 <li><a href="https://github.com/dodo0211" target="_blank"><i class="fab fa-git-square"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCGjxLr0w5KoEjVyah2cmArw" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
                 <li><a href="https://cafe.naver.com/incodingram" target="_blank"><span>N</span></a></li>
-                <li><a href="https://www.instagram.com/kind_zeroh/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="https://www.instagram.com/erin._.place/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
                 <li><a href="#" target="_blank"></a><i class="fab fa-facebook-square"></i></a></li>
             </ul>
 
