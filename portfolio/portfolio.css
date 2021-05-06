@@ -6,8 +6,6 @@
 section {
   width: 100%;
   height: 100%;
-  margin: 50px auto;
-  position: relative;
 }
 
 /* 언어 종류 리스트 */
@@ -33,10 +31,19 @@ section > div:nth-child(2) {
   display: flex;
 }
 
+section > div:nth-child(2) > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+section > div:nth-child(2) > div:nth-child(2) > div {
+  width: 800px;
+  margin: 0 auto;
+}
+
 /* 각 포폴의 제목 */
 .portfolio_detail_category {
-  flex-grow: 2;
-  flex-basis: 0;
+  /* flex-grow: 2; */
+  /* flex-basis: 0; */
   padding: 5px;
   font-size: 17px;
   margin-left: 10px;
@@ -56,10 +63,10 @@ section > div:nth-child(2) {
 }
 
 .portfolio_content {
-  flex-grow: 8;
-  flex-basis: 0;
+  /* flex-grow: 8; */
+  /* flex-basis: 0; */
   padding: 5px;
-  margin: 20px 10px;
+  margin: 0 auto;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
@@ -68,9 +75,8 @@ section > div:nth-child(2) {
   font-size: 60px;
 }
 
-.portfolio_img_android {
-  display: flex;
-  justify-content: space-around;
+.portfolio_img_android > div {
+  display: inline;
 }
 
 .portfolio_img {

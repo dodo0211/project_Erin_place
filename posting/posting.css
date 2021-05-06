@@ -30,9 +30,13 @@ section > div:first-child {
   border-radius: 4px;
 }
 
-/* 각 언어의 구체적 주제 */
+/* 각 언어 중 포스팅의 구체적 주제 */
 .posting_detail_category {
   flex-grow: 2;
+  padding: 5px;
+  font-size: 17px;
+  margin-left: 10px;
+  min-width: 300px;
 }
 
 .posting_detail_title {

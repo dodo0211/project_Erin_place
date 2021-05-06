@@ -39,36 +39,38 @@
             </div>
 
             <div class="portfolio_content">
-                <h1>재활용품으로 기부하는 자판기</h1><br />
-                <h3>C_lang</h3> <br>
-                <div class="portfolio_icon">
-                    <span><a href="https://github.com/dodo0211/vandingMachine" target="_blank"><i class="fab fa-git-square"></i></a></span>
-                    <span><a href="https://cafe.naver.com/incodingram/154" target="_blank"><span>Naver</span></a></span>
-                </div><br />
-
                 <div>
-                    <br>
-                    <h3>제작 상세</h3>
-                    - 개발 기간 : 2021 ~ <br />
-                    - 개발 <br />
-                    : 허선영 <br /><br />
+                    <h1>재활용품으로 기부하는 자판기</h1><br />
+                    <h3>C_lang</h3> <br>
+                    <div class="portfolio_icon">
+                        <span><a href="https://github.com/dodo0211/vandingMachine" target="_blank"><i class="fab fa-git-square"></i></a></span>
+                        <span><a href="https://cafe.naver.com/incodingram/154" target="_blank"><span>Naver</span></a></span>
+                    </div><br />
 
-                    <h3>개발 환경</h3>
-                    - IntelliJ IDEA CE 11.0.9.1 <br>
-                    - Version : 8.0.23 <br>
-                    - Docker version 20.10.2 <br><br>
+                    <div>
+                        <br>
+                        <h3>제작 상세</h3>
+                        - 개발 기간 : 2021 ~ <br />
+                        - 개발 <br />
+                        : 허선영 <br /><br />
 
-                    <h3>실행 환경</h3>
-                    - window 10 <br /><br>
+                        <h3>개발 환경</h3>
+                        - IntelliJ IDEA CE 11.0.9.1 <br>
+                        - Version : 8.0.23 <br>
+                        - Docker version 20.10.2 <br><br>
 
+                        <h3>실행 환경</h3>
+                        - window 10 <br /><br>
+
+                    </div>
+
+                    <div class="portfolio_img">
+                        <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine1.png" alt="프로젝트vending_machine_결과사진1"></div>
+                        <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine2.png" alt="프로젝트vending_machine_결과사진2"></div>
+                        <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine3.png" alt="프로젝트vending_machine_결과사진3"></div>
+                        <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine4.png" alt="프로젝트vending_machine_결과사진4"></div>
+                    </div><br />
                 </div>
-
-                <div class="portfolio_img">
-                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine1.png" alt="프로젝트vending_machine_결과사진1"></div>
-                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine2.png" alt="프로젝트vending_machine_결과사진2"></div>
-                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine3.png" alt="프로젝트vending_machine_결과사진3"></div>
-                    <div><img src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/portfolio/img/project_vending_machine/vending_machine4.png" alt="프로젝트vending_machine_결과사진4"></div>
-                </div><br />
             </div>
         </div>
 

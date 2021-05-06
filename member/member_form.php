@@ -3,7 +3,7 @@
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
-	<link rel="stylesheet" href="https://<?= $_SERVER["HTTP_HOST"] ?>/member/css/member.css">
+	<link rel="stylesheet" href="https://<?= $_SERVER["HTTP_HOST"] ?>/member/css/member.css?after=6">
 	<script src="https://<?= $_SERVER["HTTP_HOST"] ?>/member/js/member.js" defer></script>
 </head>
 
@@ -16,7 +16,7 @@
 		<!-- register form -->
 		<div id="main_content">
 			<div id="join_box">
-				<h2>회원 가입</h2>
+				<h2 class="register_title">회원 가입</h2>
 				<form name="member_form" method="post" action="./member_insert.php">
 					<table>
 						<tr>
@@ -46,7 +46,7 @@
 						</tr>
 					</table>
 					<br>
-					<div>
+					<div class="btn_register">
 						<!-- 회원가입 양식 확인 후 전송하기 때문에 submit이 아닌 button -->
 						<input type="button" value="초기화" onclick="reset_form()">
 						<input type="button" value="회원가입" onclick="check_input()">

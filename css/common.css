@@ -12,10 +12,19 @@
   padding: 0;
 }
 
+.common_container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
 /* ////////////////////// header ///////////////////// */
 a {
   color: black;
   font-weight: bold;
+}
+
+.header_whole {
+  background-color: cornflowerblue;
 }
 
 nav.navbar {
@@ -25,12 +34,13 @@ nav.navbar {
   justify-content: space-between;
   padding: 10px 15px;
   align-items: center;
-  background-color: cornflowerblue;
   /* background-color: #c5cae9; */
+  width: 1130px;
+  margin: 0 auto;
 }
 
 div.navbar_logo {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -40,7 +50,7 @@ div.navbar_logo i {
 
 ul.navbar_menu {
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 ul.navbar_menu li {
@@ -58,7 +68,8 @@ ul.navbar_icons {
 
 ul.navbar_icons li {
   padding: 8px 5px;
-  font-size: 35px;
+  margin-right: 5px;
+  font-size: 40px;
 }
 
 ul.register_login {
@@ -67,7 +78,7 @@ ul.register_login {
 
 ul.register_login li {
   padding: 8px 5px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 a.navbar_toggle {

@@ -2,10 +2,10 @@
   margin-top: 30px;
 }
 
-div {
+/* div {
   width: 55em;
   text-align: left;
-}
+} */
 
 table {
   margin: 20px auto;
@@ -58,7 +58,7 @@ th::after {
   width: 70px;
 }
 
-div {
+.register_title {
   width: auto;
   text-align: center;
 }
@@ -71,24 +71,28 @@ input[type="password"] {
   margin: 0 10px;
 }
 
-input[type="button"],
-input[type="submit"] {
+/* input[type="submit"], */
+input[type="button"] {
   background-color: #fc9d9a;
   color: #282828;
   font-size: 12px;
   width: 60px;
-  text-align: center;
   display: inline-block;
   padding: 4px;
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  text-align: center;
 }
 
-input[type="submit"] {
+/* input[type="submit"] {
   margin-bottom: 30px;
-}
+} */
 
 #btn {
   width: 90px;
+}
+
+.btn_register {
+  text-align: center;
 }

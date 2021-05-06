@@ -1,11 +1,13 @@
 #join_box h2 {
   margin-top: 30px;
+  width: auto;
+  text-align: center;
 }
 
-div {
+/* div {
   width: 55em;
   text-align: left;
-}
+} */
 
 table {
   margin: 20px auto;
@@ -53,10 +55,10 @@ th {
   width: 70px;
 }
 
-div {
+/* div {
   width: auto;
   text-align: center;
-}
+} */
 
 input[type="text"],
 input[type="password"] {
@@ -66,7 +68,8 @@ input[type="password"] {
 }
 
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+.member_left {
   background-color: #fc9d9a;
   color: #282828;
   font-size: 12px;
@@ -83,4 +86,10 @@ input[type="submit"] {
 }
 #btn {
   width: 90px;
+}
+.member_left {
+  margin-right: 50px;
+}
+.btn_modify {
+  text-align: center;
 }

@@ -34,7 +34,6 @@
 	<section>
 		<div id="main_content">
 			<div id="join_box">
-
 				<h2>회원 정보 수정</h2>
 				<form name="member_form" method="post" action="member_modify.php">
 					<table>
@@ -65,8 +64,11 @@
 						</tr>
 					</table>
 					<br>
-					<div>
-						<!-- submit 누르면 뮤조건 member_modify.php로 전송 -->
+					
+					<br>
+					<div class="btn_modify">
+						<div class="member_left"><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/member/member_delete_form.php">회원탈퇴</a></div>
+						<!-- submit 누르면 무조건 member_modify.php로 전송 -->
 						<input type="button" value="수정" onclick="check_input()">
 						<input type="button" value="취소" onclick="location.href='https://<?= $_SERVER['HTTP_HOST'] ?>/index.php'">
 					</div>

@@ -16,7 +16,7 @@ create_table($con, 'portfolio');
 create_table($con, 'message');
 ?>
 
-<div>
+<div class="header_whole">
     <nav class="navbar">
         <!-- nevigation logo -->
         <div class="navbar_logo">
@@ -45,7 +45,6 @@ create_table($con, 'message');
             </ul>
 
             <ul class="register_login">
-
                 <?php
                 if (!$userid) {
                 ?>
@@ -61,12 +60,9 @@ create_table($con, 'message');
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/login/logout.php">Logout</a> </li>
                     <li> | </li>
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/member/member_modify_form.php">Update_Info</a></li>
-                    <li> | </li>
-                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/member/member_delete_form.php">Member_left</a></li>
                 <?php
                 }
                 ?>
-
             </ul>
         </div>
 
@@ -78,7 +74,6 @@ create_table($con, 'message');
         <?php
         }
         ?>
-
     </nav>
 </div>
 
