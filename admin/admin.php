@@ -5,6 +5,7 @@
 	<?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
 	<!-- script -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://<?= $_SERVER['HTTP_HOST'] ?>/admin/css/admin.css">
 	<script src="https://<?= $_SERVER["HTTP_HOST"] ?>/member/js/member.js"></script>
 </head>
 

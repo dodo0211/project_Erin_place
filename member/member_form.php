@@ -3,6 +3,7 @@
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
+	<link rel="stylesheet" href="https://<?= $_SERVER["HTTP_HOST"] ?>/member/css/member.css">
 	<script src="https://<?= $_SERVER["HTTP_HOST"] ?>/member/js/member.js" defer></script>
 </head>
 

@@ -40,9 +40,9 @@ $number = $total_record - $start;
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"; ?>
 	<link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/css/greet.css">
-	<!-- script -->\
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js" defer></script>\
-	<script type="text/javascript" src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js?ver=1"></script>\
+	<!-- script -->
+	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js" defer></script>
+	<script type="text/javascript" src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/qna/js/member_form.js?ver=1"></script>
 </head>
 
 <body>
