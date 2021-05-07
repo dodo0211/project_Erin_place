@@ -60,6 +60,10 @@ th {
   text-align: center;
 } */
 
+section > div > div > form > div {
+  text-align: center;
+}
+
 input[type="text"],
 input[type="password"] {
   height: 23px;
